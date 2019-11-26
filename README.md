@@ -25,3 +25,12 @@ Step 2. With Acknowledgment and prefetch
 
 Screenshot:
 <img width="1390" alt="Screenshot 2019-11-25 at 23 52 13" src="https://user-images.githubusercontent.com/47269063/69587879-cde95a00-0fde-11ea-9117-ffdee56a172b.png">
+
+## 3. ["Publish/Subscribe"](https://www.rabbitmq.com/tutorials/tutorial-three-ruby.html)
+
+Step 1. declare the exchange in the producer side. the channel.fanout will allow exchange to send message to all binding queues.
+
+Step 2. declare the exchange in the consumer side, and bind the queue to the exchange
+
+Screenshot:
+<img width="1390" alt="Screenshot 2019-11-26 at 21 34 28" src="https://user-images.githubusercontent.com/47269063/69675750-44e22980-1097-11ea-892c-1b0682a97f78.png">
