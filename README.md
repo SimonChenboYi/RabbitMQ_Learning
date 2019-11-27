@@ -34,3 +34,15 @@ Step 2. declare the exchange in the consumer side, and bind the queue to the exc
 
 Screenshot:
 <img width="1390" alt="Screenshot 2019-11-26 at 21 34 28" src="https://user-images.githubusercontent.com/47269063/69675750-44e22980-1097-11ea-892c-1b0682a97f78.png">
+
+
+## 4. ["Routing"](https://www.rabbitmq.com/tutorials/tutorial-four-ruby.html)
+
+Step 1: Declare the exchange to be ```channel.direct('name')```  
+
+Step 2: Declare the routing_key for the publisher ``` exchange.publish(message,routing_key: 'the_rounting_key')```  
+
+Step 3: declare the queue and bind the queue to the routing_key from consumer side ```queue.bind(exchange, routing_key: 'the_rounting_key')```
+
+Screenshot:
+![Screenshot 2019-11-27 at 16 35 53](https://user-images.githubusercontent.com/47269063/69742252-5fb6ab80-1134-11ea-9de2-2bc4f02536c4.png)
